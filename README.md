@@ -4,7 +4,7 @@ This project contains a script that measures how long it takes [tinypool](https:
 
 ## Usage
 
-1. Either clone or download this repository to your local machine.
+1. Either clone or [download](https://github.com/rgrove/jamf-node-fork-performance/archive/refs/heads/main.zip) this repository to your local machine.
 
 2. Ensure that you have a recent LTS version of [Node.js](https://nodejs.org/) installed. This project was tested with Node.js 20.17.0.
 
