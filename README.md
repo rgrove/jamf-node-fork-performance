@@ -14,6 +14,6 @@ This project contains a script that measures how long it takes [tinypool](https:
 
 ## Output
 
-The script will print a message as each worked process starts. After all processes have started, the script will report the total time taken to fork all worker processes.
+The script will print a message as each worker process starts. After all processes have started, the script will report the total time taken to fork all worker processes.
 
 On a 2021 MacBook Pro with an M1 Pro processor, Node.js 20.17.0 typically finishes the benchmark in ~250 milliseconds when Jamf Protect is not enabled. With Jamf Protect enabled, the benchmark finishes in ~30 seconds.
