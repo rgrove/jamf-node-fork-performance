@@ -16,4 +16,7 @@ This project contains a script that measures how long it takes [tinypool](https:
 
 The script will print a message as each worker process starts. After all processes have started, the script will report the total time taken to fork all worker processes.
 
-On a 2021 MacBook Pro with an M1 Pro processor, Node.js 20.17.0 typically finishes the benchmark in ~250 milliseconds when Jamf Protect is not enabled. With both Jamf Protect and [BlockBlock](https://objective-see.org/products/blockblock.html) enabled, the benchmark finishes in ~30 seconds. This may be related to [this BlockBlock issue](https://github.com/objective-see/BlockBlock/issues/10), which indicates that BlockBlock reads large amounts of data from the filesystem every time any process starts.
+On a 2021 MacBook Pro with an M1 Pro processor, Node.js 20.17.0 typically finishes the benchmark in ~250 milliseconds when Jamf Protect is not enabled. With both Jamf Protect and [BlockBlock](https://objective-see.org/products/blockblock.html) &lt;=2.2.3 enabled, the benchmark finishes in ~30 seconds.
+
+> [!NOTE]
+> This issue is [fixed](https://github.com/objective-see/BlockBlock/issues/10#issuecomment-2346943920) in BlockBlock 2.2.4!
